@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #1a4fe2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #004080;
+  color: white;
+  padding: 1rem;
+  width: 220px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.content {
+  flex: 1;
+  padding: 2rem;
+  background: white;
+}
+
+/* Formulário */
+.form-section {
+  background: #e6f2ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+form input, form textarea, form button {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #003366;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0055a5;
+}
+
+/* Lista */
+.list-section h2 {
+  margin-bottom: 1rem;
+}
+
+.search {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+table th {
+  background: #003366;
+  color: white;
+}
+
+.edit {
+  background: #ffcc00;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete {
+  background: #cc0000;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit:hover {
+  background: #e6b800;
+}
+
+.delete:hover {
+  background: #990000;
+}
